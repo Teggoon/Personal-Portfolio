@@ -1,38 +1,78 @@
-.App {
+:root {
+  --basically-white: rgb(250,250,250);
+  --light-gray: rgb(230,230,230);
+  --light-orange: rgb(242, 179, 65);
+  --dark: rgb(50, 51, 54);
+  --dark-hover: rgb(114, 114, 143);
+  --light-blue: rgb(234,244,243);
+  --dark-cyan: rgb(52, 107, 109);
+}
+
+body {
+  background-color: var(--basically-white);
+}
+
+.logo {
+  position: absolute;
+  width: 120px;
+  left: 50px;
+  top: 9px;
+}
+
+.navbar-container {
+  padding-left: 50vw;
+  display: flex;
+  width: 50vw;
+  padding-top: 12px;
+}
+
+.nav-link {
+  width: 100%;
+  height: 22px;
+  color: var(--dark);
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-decoration: none;
+  border-left: 1px solid var(--light-gray);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link:hover {
+  color: var(--dark-hover);
+}
+.nav-link-active {
+  color: var(--light-orange);
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage-section-1 {
+  height: 500px;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homepage-main-intro-container {
+  position: relative;
+  /* background-color:rgb(52, 107, 109); */
+  padding-top: 100px;
+  margin-left: 100px;
+  width: 400px;
+  height: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.homepage-name {
+  color: var(--dark);
 }
+.homepage-title {
+  font-weight: normal;
+  color: var(--dark);
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.homepage-question {
+  color: var(--dark-cyan);
+
+} 
+
+.scroll-down-suggestion {
+  position: relative;
+  width: 100%;
+  text-align: center;
 }
