@@ -76,3 +76,13 @@ body {
   width: 100%;
   text-align: center;
 }
+
+.experience-section-container {
+  position: relative;
+  border: 2px solid black;
+  margin: 20px 0px;
+  padding-top: 9px;
+  padding-left: 3.5vw;
+  padding-bottom: 9px;
+  width: 60vw;
+}
