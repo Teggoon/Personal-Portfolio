@@ -7,16 +7,34 @@
   --light-blue: rgb(234,244,243);
   --dark-cyan: rgb(52, 107, 109);
 }
+@font-face {
+  font-family: MontserratThin;
+  src: url("../fonts/Montserrat-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
 
 body {
   background-color: var(--basically-white);
+  /* background: url("../image/scattered-forcefields.svg"); */
+  /* background: url("../image/generated.svg"); */
+  background-image: url('../image/homepage_background_static2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden
 }
+
 
 .logo {
   position: absolute;
   width: 120px;
   left: 50px;
   top: 9px;
+  animation: fadeinfromtop 1s ease;
 }
 
 .navbar-container {
@@ -24,6 +42,7 @@ body {
   display: flex;
   width: 50vw;
   padding-top: 12px;
+  animation: fadeinfromtop 1s ease;
 }
 
 .nav-link {
@@ -45,44 +64,118 @@ body {
 }
 
 .homepage-section-1 {
-  height: 500px;
+  height: 100vh;
   width: 100%;
 }
 
 .homepage-main-intro-container {
   position: relative;
-  /* background-color:rgb(52, 107, 109); */
   padding-top: 100px;
   margin-left: 100px;
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 70vh;
+  animation: fadeinfrombottom 1s ease;
 }
+
+.vertical-line-animation {
+  position: absolute;
+  border-right: 2px solid var(--light-orange);
+  animation-name: vertical-line-flowdown;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  height: 140px;
+}
+
+#vertical-line-1 {
+  width: 0px;
+  margin-top: 20px;
+}
+
+#vertical-line-1 {
+  width: 20px;
+  margin-top: 60px;
+}
+
 
 .homepage-name {
   color: var(--dark);
+  font-weight: 100;
+  font-size: 4em;
+  font-family: MontserratThin;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  font-weight: bold;
 }
 .homepage-title {
   font-weight: normal;
   color: var(--dark);
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-top: 29px;
+  margin-left: 55px;
 
 }
 .homepage-question {
   color: var(--dark-cyan);
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-left: 55px;
 
 } 
 
 .scroll-down-suggestion {
   position: relative;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
 .experience-section-container {
   position: relative;
-  border: 2px solid black;
   margin: 20px 0px;
   padding-top: 9px;
   padding-left: 3.5vw;
   padding-bottom: 9px;
-  width: 60vw;
+  padding-right: 3.5vw;
+  width: 70vw;
+  height: 260px;
+}
+.experience-section-1 {
+  background-color: var(--light-orange);
+}
+.experience-section-2 {
+  background-color: var(--light-blue);
+}
+.experience-section-3 {
+  background-color: var(--dark-cyan);
+}
+
+@keyframes vertical-line-flowdown {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 140px;
+  }
+}
+
+@keyframes fadeinfrombottom {
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeinfromtop {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
