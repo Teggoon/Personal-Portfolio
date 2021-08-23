@@ -2,10 +2,13 @@
   --basically-white: rgb(250,250,250);
   --light-gray: rgb(230,230,230);
   --light-orange: rgb(242, 179, 65);
+  --light-orange-lil-darker: rgb(204, 150, 51);
   --dark: rgb(50, 51, 54);
   --dark-hover: rgb(114, 114, 143);
   --light-blue: rgb(234,244,243);
+  --light-blue-lil-darker: rgb(203, 223, 221);
   --dark-cyan: rgb(52, 107, 109);
+  --dark-cyan-lil-darker: rgb(43, 89, 92);
 }
 @font-face {
   font-family: MontserratThin;
@@ -54,27 +57,41 @@ body {
   text-decoration: none;
   border-left: 1px solid var(--light-gray);
   text-align: center;
+  padding-bottom: 2vh;
 }
 .nav-link:hover {
+  animation: buttonhover 0.3s ease;
+  box-shadow: 0px 10px 5px -1px #EEE;
   color: var(--dark-hover);
+  transform: translateY(-1px);
 }
 .nav-link-active {
   color: var(--light-orange);
   text-decoration: underline;
 }
 
+.homepage-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 1600px;
+}
+
 .homepage-section-1 {
-  height: 100vh;
+  margin-top: 10vh;
+  height: 90vh;
+  position: relative;
   width: 100%;
 }
 
 .homepage-main-intro-container {
   position: relative;
-  padding-top: 100px;
+  padding-top: 30px;
   margin-left: 100px;
   width: 600px;
-  height: 70vh;
+  height: 50vh;
+  margin-bottom: 20vh;
   animation: fadeinfrombottom 1s ease;
+  box-shadow: 10px 10px 10px -2px #EEE;
 }
 
 .vertical-line-animation {
@@ -95,7 +112,6 @@ body {
   width: 20px;
   margin-top: 60px;
 }
-
 
 .homepage-name {
   color: var(--dark);
@@ -128,26 +144,62 @@ body {
   position: relative;
   width: 100vw;
   text-align: center;
+  color: #777;
 }
 
 .experience-section-container {
   position: relative;
-  margin: 20px 0px;
+  margin: 30px 0px;
   padding-top: 9px;
   padding-left: 3.5vw;
   padding-bottom: 9px;
   padding-right: 3.5vw;
-  width: 70vw;
+  width: 63vw;
   height: 260px;
+  animation: fadeinfromleft 0.8s ease;
+  box-shadow: 0px 6px 9px 2px #DDD;
 }
+.experience-section-container h3 {
+  padding: 0.5em 1vw;
+  width: 40vw;
+}
+
 .experience-section-1 {
   background-color: var(--light-orange);
+}
+.experience-section-1 h3 {
+  background-color: var(--light-gray);
 }
 .experience-section-2 {
   background-color: var(--light-blue);
 }
+.experience-section-2 h3 {
+  background-color: var(--light-blue-lil-darker);
+}
 .experience-section-3 {
   background-color: var(--dark-cyan);
+}
+.experience-section-3 h3 {
+  background-color: var(--dark-cyan-lil-darker);
+  color: var(--basically-white);
+}
+
+.arrow-div {
+  position: absolute;
+  left: calc(70vw);
+  top: 0px;
+  border-top: 139px solid transparent;
+  border-bottom: 139px solid transparent;
+}
+
+#arrow-orange {
+  border-left: 130px solid var(--light-orange);
+}
+#arrow-light-blue {
+  border-left: 130px solid var(--light-blue);
+}
+#arrow-dark-cyan {
+  border-left: 130px solid var(--dark-cyan);
 }
 
 @keyframes vertical-line-flowdown {
@@ -176,6 +228,33 @@ body {
   }
   to {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinfromleft {
+  from {
+    transform: translateX(-80px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes buttonhover {
+  from {
+    box-shadow: none;
+    color: var(--dark);
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  to {
+    box-shadow: 0px 10px 5px -1px #EEE;
+    color: var(--dark-hover);
+    transform: translateY(-1px);
     opacity: 1;
   }
 }
