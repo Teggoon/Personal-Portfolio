@@ -185,7 +185,21 @@ body {
 }
 
 .project-description-container {
-  width: 85vw;
+  background-color: paleturquoise;
+  display: block;
+  width: 90vw;
+}
+.project-description-container p {
+  /* background-color: paleturquoise; */
+  display: inline-block;
+  width: 65vw;
+}
+.project-description-container .technologies-used-container {
+  /* background-color: aqua; */
+  display: inline-block;
+  padding-left: 1.5vw;
+  padding-right: 0vw;
+  width: 22vw;
 }
 
 .arrow-div {
