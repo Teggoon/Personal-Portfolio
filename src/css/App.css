@@ -184,6 +184,10 @@ body {
   color: var(--basically-white);
 }
 
+.project-description-container {
+  width: 85vw;
+}
+
 .arrow-div {
   position: absolute;
   left: calc(70vw);
