@@ -61,7 +61,7 @@ body {
 }
 .nav-link:hover {
   animation: buttonhover 0.3s ease;
-  box-shadow: 0px 10px 5px -1px #EEE;
+  box-shadow: 0px 5px 5px -1px #EEE;
   color: var(--dark-hover);
   transform: translateY(-1px);
 }
@@ -187,19 +187,27 @@ body {
 .project-description-container {
   background-color: paleturquoise;
   display: block;
+
   width: 90vw;
 }
-.project-description-container p {
-  /* background-color: paleturquoise; */
+.project-description-container .project-title-description-container {
+  background-color: cadetblue;
+  position: relative;
   display: inline-block;
+  height: 30vh;
   width: 65vw;
 }
 .project-description-container .technologies-used-container {
-  /* background-color: aqua; */
+  background-color: aqua;
   display: inline-block;
+  position: absolute;
   padding-left: 1.5vw;
   padding-right: 0vw;
   width: 22vw;
+}
+.technologies-used-container h5 {
+  margin-top: 0px;
+  padding-top: 20px;  
 }
 
 .arrow-div {
@@ -267,10 +275,10 @@ body {
     box-shadow: none;
     color: var(--dark);
     transform: translateY(0px);
-    opacity: 0.5;
+    opacity: 1;
   }
   to {
-    box-shadow: 0px 10px 5px -1px #EEE;
+    box-shadow: 0px 5px 5px -1px #EEE;
     color: var(--dark-hover);
     transform: translateY(-1px);
     opacity: 1;
