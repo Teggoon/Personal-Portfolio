@@ -1,4 +1,4 @@
-const ProjectTabComponent = ({title, description}) => {
+const ProjectTabComponent = ({title, description, technologies}) => {
     return ( 
         <div className="project-description-container">
                 <div className="columns-side-by-side">
@@ -10,10 +10,9 @@ const ProjectTabComponent = ({title, description}) => {
                     <div className="technologies-used-container">
                         <h5>Technologies used: </h5>
                         <ul>
-                            <li>Frontend: React, CSS, HTML tables</li>
-                            <li>Backend: Node & Express, SQL</li>
-                            <li>Automated testing: Jest, Enzyme</li>
-                            <li>Security: LDAP authentication</li>
+                            {technologies.map((technology, index) => {
+                                return <li key={index}>{technology}</li>
+                            })}
                         </ul>
                     </div>
                 </div>

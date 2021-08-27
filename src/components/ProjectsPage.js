@@ -7,11 +7,13 @@ const ProjectsPage = () => {
             <ProjectTabComponent 
             title="Full-Stack Development of DocuMint"
             description="DocuMint was a web application enabling University of Phoenix
-            employees to view pdf documents stored in their AWS S3 database. Since I built this
-            project from scratch, I was able to get hands-on experience with various aspects of
-            the web-development stack, with special emphasis on automated testing and frontend
-            development.
-            "
+            employees to view pdf documents stored in their AWS S3 database."
+            technologies={
+                ["Frontend: React, CSS", 
+                "Backend: Node & Express, SQL", 
+                "Automated testing: Jest, Enzyme",
+                "Security: LDAP authentication"
+                ]}
             />
 
             <div className="project-description-container">
