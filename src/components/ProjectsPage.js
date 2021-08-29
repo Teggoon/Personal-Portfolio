@@ -15,6 +15,8 @@ const ProjectsPage = () => {
                 "Security: LDAP authentication"
                 ]}
             hasSourceCode={false}
+            hasProjectDemo={true}
+            projectDemoLink={"TEMP_LINK"}
             />
             
             <ProjectTabComponent 
@@ -26,6 +28,8 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/AgoraDatabaseCode"}
+            hasProjectDemo={true}
+            projectDemoLink={"TEMP_LINK"}
             />
 
             <ProjectTabComponent 
