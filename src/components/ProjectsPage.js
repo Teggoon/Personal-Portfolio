@@ -2,7 +2,7 @@ import ProjectTabComponent from "./ProjectTabComponent";
 const ProjectsPage = () => {
     return ( 
         <div>
-            <h2>Frontend projects</h2>
+            <h2>Web development</h2>
 
             <ProjectTabComponent 
             title="Full-Stack Development of DocuMint"
@@ -15,40 +15,36 @@ const ProjectsPage = () => {
                 "Security: LDAP authentication"
                 ]}
             />
-
-            <div className="project-description-container">
-                <h3>Website collecting user activity for potential business analysis</h3>
-                <p></p>
-            </div>
-
-
-            <div className="project-description-container">
-                <h3>Shockwave.io online multiplayer game</h3>
-                
-                <p></p>
-            </div>
             
-            <h2>Backend projects</h2>
-            <div className="project-description-container">
-                <h3>Database specialist at Agora: a crypto-trading website</h3>
-                <p></p>
-            </div>
+            <ProjectTabComponent 
+            title="Backend database management of Agora, a cryptocurrency-browsing website"
+            description="Co-wrote script to fetch cryptocurrency market data from the public APIs of 19
+            popular cryptocurrency exchanges, and populate them into our Firebase database."
+            technologies={
+                ["Node.js"
+                ]}
+            />
 
-            <div className="project-description-container">
-                <h3>Windows desktop application that generates XMLs based on SQL queries</h3>
-                <p></p>
-            </div>
+            <ProjectTabComponent 
+            title="Shockwave.io online multiplayer game"
+            description="Created a multiplayer game where players jump around and kill each other with shockwaves
+            on the ground."
+            technologies={
+                ["Frontend: vanilla Javascript & HTML",
+                "Backend: Node.js, web sockets"
+                ]}
+            />
             
-            <div className="project-description-container">
-                <h3>Hosting my own VPN server on AWS</h3>
-                <p></p>
-            </div>
-            
-            <div className="project-description-container">
-                <h3>Server-side plugins for Minecraft servers</h3>
-                <p></p>
-            </div>
-            
+            <h2>Software</h2>
+
+            <ProjectTabComponent 
+            title="SDU Helper, a Windows Desktop application for University of Phoenix"
+            description="This is an application written in C#. As a support tool for IT employees, it generates
+            XML files based on the results of SQL queries to their financial-aid document database."
+            technologies={
+                ["C#, SQL",
+                ]}
+            />
         </div>
     );
 }

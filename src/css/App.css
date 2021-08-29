@@ -189,6 +189,7 @@ body {
   display: block;
 
   width: 90vw;
+  margin-bottom: 1vh;
 }
 .project-description-container .project-title-description-container {
   background-color: cadetblue;
