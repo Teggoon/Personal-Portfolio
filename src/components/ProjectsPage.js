@@ -14,6 +14,7 @@ const ProjectsPage = () => {
                 "Automated testing: Jest, Enzyme",
                 "Security: LDAP authentication"
                 ]}
+            hasSourceCode={false}
             />
             
             <ProjectTabComponent 
@@ -23,6 +24,8 @@ const ProjectsPage = () => {
             technologies={
                 ["Node.js"
                 ]}
+            hasSourceCode={true}
+            sourceCodeLink={"https://github.com/Teggoon/AgoraDatabaseCode"}
             />
 
             <ProjectTabComponent 
@@ -33,6 +36,8 @@ const ProjectsPage = () => {
                 ["Frontend: vanilla Javascript & HTML",
                 "Backend: Node.js, web sockets"
                 ]}
+            hasSourceCode={true}
+            sourceCodeLink={"https://github.com/Teggoon/Shockwaveio-Online-Multiplayer-Game"}
             />
             
             <h2>Software</h2>
@@ -44,6 +49,7 @@ const ProjectsPage = () => {
             technologies={
                 ["C#, SQL",
                 ]}
+            hasSourceCode={false}
             />
         </div>
     );
