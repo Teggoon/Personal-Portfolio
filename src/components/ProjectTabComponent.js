@@ -1,4 +1,4 @@
-const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, textOfDemoLink, projectDemoLink}) => {
+const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink}) => {
     return ( 
         <div className="project-description-container">
                 <div className="columns-side-by-side">

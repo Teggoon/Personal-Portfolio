@@ -1,7 +1,7 @@
 import ProjectTabComponent from "./ProjectTabComponent";
 const ProjectsPage = () => {
     return ( 
-        <div>
+        <div className="project-page">
             <h2>Web development</h2>
 
             <ProjectTabComponent 
@@ -15,8 +15,7 @@ const ProjectsPage = () => {
                 "Security: LDAP authentication"
                 ]}
             hasSourceCode={false}
-            hasProjectDemo={true}
-            projectDemoLink={"TEMP_LINK"}
+            hasProjectDemo={false}
             />
             
             <ProjectTabComponent 
@@ -28,8 +27,7 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/AgoraDatabaseCode"}
-            hasProjectDemo={true}
-            projectDemoLink={"TEMP_LINK"}
+            hasProjectDemo={false}
             />
 
             <ProjectTabComponent 
@@ -42,6 +40,7 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/Shockwaveio-Online-Multiplayer-Game"}
+            hasProjectDemo={false}
             />
             
             <h2>Software</h2>
@@ -54,6 +53,7 @@ const ProjectsPage = () => {
                 ["C#, SQL",
                 ]}
             hasSourceCode={false}
+            hasProjectDemo={false}
             />
         </div>
     );

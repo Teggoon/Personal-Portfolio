@@ -9,6 +9,7 @@
   --light-blue-lil-darker: rgb(203, 223, 221);
   --dark-cyan: rgb(52, 107, 109);
   --dark-cyan-lil-darker: rgb(43, 89, 92);
+  --gentler-dark-gray: rgb(80,80,92);
 }
 @font-face {
   font-family: MontserratThin;
@@ -184,31 +185,47 @@ body {
   color: var(--basically-white);
 }
 
-.project-description-container {
-  background-color: paleturquoise;
-  display: block;
-
-  width: 90vw;
-  margin-bottom: 1vh;
+.project-page h2 {
+  padding-left: 2vw;
+  font-family: Montserrat;
 }
-.project-description-container .project-title-description-container {
-  background-color: cadetblue;
+
+.project-description-container {
+  display: block;
+  box-sizing: border-box;
+  width: 80vw;
+  margin-bottom: 3vh;
+  background-color: var(--basically-white);
+  font-family: Montserrat;
+  color: var(--dark);
+  box-shadow: 5px 5px 5px 0px #CCC;
+}
+.project-title-description-container {
+  /* background-color: red; */
+  box-sizing: border-box;
   position: relative;
   display: inline-block;
+  padding-left: 2vw;
   height: 30vh;
-  width: 65vw;
+  width: 55vw;
 }
-.project-description-container .technologies-used-container {
-  background-color: aqua;
+.project-title-description-container h3 {
+  color: var(--gentler-dark-gray);
+}
+.technologies-used-container {
+  /* background-color:aquamarine; */
+  font-size: 0.9rem;
+  box-sizing: border-box;
   display: inline-block;
   position: absolute;
-  padding-left: 1.5vw;
-  padding-right: 0vw;
-  width: 22vw;
+  padding: 0vh 2vw;
+  width: 25vw;
 }
 .technologies-used-container h5 {
   margin-top: 0px;
-  padding-top: 20px;  
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: var(--gentler-dark-gray);
 }
 
 .arrow-div {
