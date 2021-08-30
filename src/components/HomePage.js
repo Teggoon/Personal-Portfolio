@@ -50,9 +50,9 @@ const HomePage = () => {
                     <h3 className="homepage-title">Front-end & web developer</h3>
                     <h4 className="homepage-question">Have a business need I can meet?</h4>
                 </div>
-                <div className="scroll-down-suggestion">Scroll to see my experiences</div>
+                {/* <div className="scroll-down-suggestion">Scroll to see my experiences</div> */}
             </div>
-            {displayExperienceSections[0] && <div className="experience-section-container experience-section-1">
+            {/*{displayExperienceSections[0] && <div className="experience-section-container experience-section-1">
             <div className="arrow-div" id="arrow-orange"></div>
             <h3>Solid foundation in HTML, CSS, and Javascript</h3>
             <p>
@@ -81,6 +81,7 @@ const HomePage = () => {
             adaptiveness.
             </p>
             </div>}
+        */}
             
         </div>
     );
