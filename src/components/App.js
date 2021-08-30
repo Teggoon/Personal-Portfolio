@@ -6,6 +6,7 @@ import GamesPage from './GamesPage';
 import MusicPage from './MusicPage';
 import ProjectsPage from './ProjectsPage';
 import logo from "../image/logo.png"
+import ContactPage from './ContactPage';
 
 
 function App() {
@@ -25,12 +26,8 @@ function App() {
             <ProjectsPage />
           </Route>
 
-          <Route exact path="/games">
-            <GamesPage />
-          </Route>
-
-          <Route exact path="/music">
-            <MusicPage />
+          <Route exact path="/contact">
+            <ContactPage />
           </Route>
 
         </Switch>

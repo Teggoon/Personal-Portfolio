@@ -11,8 +11,9 @@ const NavBar = () => {
         <div className="navbar-container">
             <LinkWrapper path="/" name="Home" />
             <LinkWrapper path="/projects" name="Projects" />
-            <LinkWrapper path="/games" name="Games" />
-            <LinkWrapper path="/music" name="Music" />
+            <LinkWrapper path="/contact" name="Contact" />
+            {/* <LinkWrapper path="/games" name="Games" /> */}
+            {/* <LinkWrapper path="/music" name="Music" /> */}
         </div>
     );
 }
