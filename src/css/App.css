@@ -9,7 +9,7 @@
   --light-blue-lil-darker: rgb(203, 223, 221);
   --dark-cyan: rgb(52, 107, 109);
   --dark-cyan-lil-darker: rgb(43, 89, 92);
-  --gentler-dark-gray: rgb(80,80,92);
+  --gentler-dark-gray: rgb(70,70,92);
 }
 @font-face {
   font-family: MontserratThin;
@@ -186,7 +186,7 @@ body {
 }
 
 .project-page h2 {
-  padding-left: 2vw;
+  padding-left: 3vw;
   font-family: Montserrat;
 }
 
@@ -198,19 +198,24 @@ body {
   background-color: var(--basically-white);
   font-family: Montserrat;
   color: var(--dark);
-  box-shadow: 5px 5px 5px 0px #CCC;
+  box-shadow: 5px 5px 5px 0px #DDD;
 }
 .project-title-description-container {
   /* background-color: red; */
   box-sizing: border-box;
   position: relative;
   display: inline-block;
-  padding-left: 2vw;
+  padding-left: 3vw;
   height: 30vh;
   width: 55vw;
 }
 .project-title-description-container h3 {
   color: var(--gentler-dark-gray);
+  font-family: MontserratThin;
+}
+.project-title-description-container p {
+  color: var(--gentler-dark-gray);
+  font-size: 0.9rem;
 }
 .technologies-used-container {
   /* background-color:aquamarine; */
@@ -226,6 +231,26 @@ body {
   padding-top: 20px;
   font-size: 0.9rem;
   color: var(--gentler-dark-gray);
+}
+
+.project-related-link {
+  font-size: 0.9rem;
+}
+.project-related-link:visited {
+  color: rgb(43, 99, 184);
+}
+
+.view-project-demo-link {
+  position: relative;
+  margin-top: 1vh;
+  margin-left: 50%;
+}
+.view-project-code-link {
+  margin-left: 5vw;
+}
+.external-link-image {
+  margin-left: 0.5ch;
+  width: 10px;
 }
 
 .arrow-div {
