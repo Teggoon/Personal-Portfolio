@@ -89,18 +89,21 @@ body {
   height: 90vh;
   position: relative;
   width: 100%;
+  background-color:red;
 }
 
 .homepage-main-intro-container {
   position: relative;
-  padding-top: 30px;
+  padding-top: 4vh;
   margin-left: 7vw;
-  width: 60vw;
+  width: calc(50vw + 10rem);
   max-width: 600px;
-  height: 50vh;
+  height: 55vh;
   margin-bottom: 20vh;
+  box-sizing: border-box;
   animation: fadeinfrombottom 1s ease;
   box-shadow: 10px 10px 10px -2px #EEE;
+  background-color: rgb(43, 99, 184);
 }
 
 .vertical-line-animation {
@@ -125,7 +128,7 @@ body {
 .homepage-name {
   color: var(--dark);
   font-weight: 100;
-  font-size: 5vw;
+  font-size: calc(2vw + 1.5em);
   font-family: MontserratThin;
   margin-bottom: 0px;
   margin-left: 50px;
@@ -135,7 +138,7 @@ body {
   font-weight: normal;
   color: var(--dark);
   font-family: Montserrat;
-  font-size: 1.7vw;
+  font-size: calc(0.5vw + 1em);
   font-weight: bold;
   margin-top: 29px;
   margin-left: 55px;
@@ -145,7 +148,7 @@ body {
   color: var(--dark-cyan);
   font-family: Montserrat;
   font-weight: bolder;
-  font-size: 1.7vw;
+  font-size: calc(0.3vw + 1em);
   margin-left: 55px;
 
 } 
@@ -368,6 +371,10 @@ body {
     width: 100vw;
     flex-direction: column;
     height: auto;
+  }
+  
+  .homepage-main-intro-container {
+    width: auto;
   }
   
 }
