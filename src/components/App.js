@@ -7,14 +7,20 @@ import MusicPage from './MusicPage';
 import ProjectsPage from './ProjectsPage';
 import logo from "../image/logo.png"
 import ContactPage from './ContactPage';
-
+import DocuMintDemoPage from './DocuMintDemoPage';
+import SDUHelperDemoPage from './SDUHelperDemoPage';
 
 function App() {
+  const currentURL = (window.location.href + "");
+  const currentEndpoint = currentURL.substring(currentURL.lastIndexOf("/"));
   return (
     <Router>
       <div className="App">
         <img className="logo" src={logo}/>
-        <NavBar />
+
+        {currentEndpoint != "/documintdemo" && currentEndpoint != "/sduhelperdemo" && 
+          <NavBar />
+        }
 
         <Switch>
 
@@ -28,6 +34,14 @@ function App() {
 
           <Route exact path="/contact">
             <ContactPage />
+          </Route>
+
+          <Route exact path="/documintdemo">
+            <DocuMintDemoPage />
+          </Route>
+
+          <Route exact path="/sduhelperdemo">
+            <SDUHelperDemoPage />
           </Route>
 
         </Switch>

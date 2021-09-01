@@ -15,6 +15,9 @@ const ProjectsPage = () => {
                 "Security: LDAP authentication"
                 ]}
             hasSourceCode={false}
+            hasProjectDemo={true}
+            projectDemoLink={"/documintdemo"}
+            demoLinkType={"localLink"}
             />
             
             <ProjectTabComponent 
@@ -27,8 +30,6 @@ const ProjectsPage = () => {
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/AgoraDatabaseCode"}
             hasProjectDemo={false}
-            hasProjectDemo={true}
-            projectDemoLink={""}
             />
 
             <ProjectTabComponent 
@@ -54,7 +55,9 @@ const ProjectsPage = () => {
                 ["C#, SQL",
                 ]}
             hasSourceCode={false}
-            hasProjectDemo={false}
+            hasProjectDemo={true}
+            projectDemoLink={"/sduhelperdemo"}
+            demoLinkType={"localLink"}
             />
         </div>
     );

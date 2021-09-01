@@ -1,5 +1,6 @@
 import external_link_image from "../image/external_link_image.png"
-const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink}) => {
+import { Link } from "react-router-dom";
+const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink, demoLinkType}) => {
     return ( 
         <div className="project-description-container">
                 <div className="columns-side-by-side">
@@ -7,11 +8,18 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
                     <div className="project-title-description-container">
                         <h3>{title}</h3>
                         <p>{description}</p>
-                        {hasProjectDemo && 
-                        <a className="view-project-demo-link project-related-link" href={projectDemoLink}>
-                            View demo
-                            <img className="external-link-image" src={external_link_image}></img>
-                        </a>
+                        { hasProjectDemo && demoLinkType == "localLink" &&
+                            <Link to={projectDemoLink} className={"view-project-demo-link project-related-link"} target="_blank">
+                                View Demo
+                                <img className="external-link-image" src={external_link_image} ></img>
+                            </Link>
+                        }
+                        
+                        {hasProjectDemo && demoLinkType == "externalLink" &&
+                            <a className="view-project-demo-link project-related-link" href={projectDemoLink}>
+                                View Demo
+                                <img className="external-link-image" src={external_link_image}></img>
+                            </a>
                         }
 
                         {hasSourceCode && 

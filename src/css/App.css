@@ -247,6 +247,7 @@ body {
 
 .project-related-link {
   font-size: 0.9rem;
+  color: rgb(43, 99, 184);
 }
 .project-related-link:visited {
   color: rgb(43, 99, 184);
