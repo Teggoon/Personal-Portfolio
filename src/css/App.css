@@ -263,6 +263,15 @@ body {
   margin-left: 0.5ch;
   width: 10px;
 }
+
+
+.demo-page-title {
+  text-align: center;
+  padding-left: 2vw;
+  font-size: 2em;
+  font-family: MontserratThin;
+  color: var(--dark);
+}
 .arrow-button {
   border: 1px solid #555;
   border-width: 0 3px 3px 0;

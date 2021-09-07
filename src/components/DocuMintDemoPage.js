@@ -19,8 +19,8 @@ const DocuMintDemoPage = () => {
     }
 
     return (  
-        <div>
-            <h1>DocuMint Demo</h1>
+        <div className="demo-page">
+            <h1 className="demo-page-title">DocuMint Demo</h1>
             
             <span className="demo-page-button-left-container">
                 {pageNumber > minPageNUmber && <span className="arrow-button arrow-left " onClick={handleLeftButtonClick}></span>}
