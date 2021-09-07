@@ -292,10 +292,13 @@ body {
 .demo-page-button-left-container {
   display: inline-block;
   width: 25vw;
+  box-sizing: content-box;
 }
 .demo-page-button-right-container {
   display: inline-block;
-  width: 25vw;
+}
+.demo-explanation-row-container {
+  height: 10vh;
 }
 .arrow-right {
   transform: rotate(-45deg);
@@ -314,6 +317,13 @@ body {
   border-top: 139px solid transparent;
   border-bottom: 139px solid transparent;
 }
+.demo-gif {
+  width: 80vw;
+  max-height: 70vh;
+  margin-left: 10vw;
+  object-fit: contain;
+}
+
 
 #arrow-orange {
   border-left: 130px solid var(--light-orange);
