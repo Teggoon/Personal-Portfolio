@@ -89,7 +89,6 @@ body {
   height: 90vh;
   position: relative;
   width: 100%;
-  background-color:red;
 }
 
 .homepage-main-intro-container {
@@ -103,7 +102,6 @@ body {
   box-sizing: border-box;
   animation: fadeinfrombottom 1s ease;
   box-shadow: 10px 10px 10px -2px #EEE;
-  background-color: rgb(43, 99, 184);
 }
 
 .vertical-line-animation {
@@ -264,6 +262,40 @@ body {
 .external-link-image {
   margin-left: 0.5ch;
   width: 10px;
+}
+.arrow-button {
+  border: 1px solid #555;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 1vw;
+}
+.arrow-button:hover {
+  border: 1px solid #777;
+  border-width: 0 3px 3px 0;
+  cursor: pointer;
+}
+.demo-gif-explanation {
+  display: inline-block;
+  position: relative;
+  width: 50vw;
+  text-align: center;
+}
+.demo-page-button-left-container {
+  display: inline-block;
+  width: 25vw;
+}
+.demo-page-button-right-container {
+  display: inline-block;
+  width: 25vw;
+}
+.arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  float: right;
 }
 
 .arrow-div {
