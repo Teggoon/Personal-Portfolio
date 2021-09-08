@@ -23,10 +23,16 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
                         }
 
                         {hasSourceCode && 
-                        <a className="view-project-code-link project-related-link" href={sourceCodeLink}>
-                            View code
-                            <img className="external-link-image" src={external_link_image}></img>
-                        </a>
+                            <a className="view-project-code-link project-related-link" href={sourceCodeLink}>
+                                View code
+                                <img className="external-link-image" src={external_link_image}></img>
+                            </a>
+                        }
+
+                        {!hasSourceCode && 
+                            <span className="unavailable-code-link">
+                                No code available
+                            </span>
                         }
                     </div>
                     <div className="technologies-used-container">

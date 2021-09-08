@@ -41,7 +41,7 @@ body {
   position: absolute;
   width: 120px;
   padding-left: 4vw;
-  padding-top: 9px;
+  padding-top: 3vh;
   animation: fadeinfromtop 1s ease;
 }
 
@@ -259,16 +259,24 @@ body {
   position: absolute;
   margin-left: 70%;
 }
+.unavailable-code-link {
+  position: absolute;
+  margin-left: 70%;
+  color: #aaa;
+}
 .external-link-image {
   margin-left: 0.5ch;
   width: 10px;
 }
 
 
+.demo-page {
+  background-color: var(--basically-white);
+}
 .demo-page-title {
   text-align: center;
   padding-left: 2vw;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: MontserratThin;
   color: var(--dark);
 }
@@ -295,13 +303,15 @@ body {
   width: 100vw;
   text-align: center;
   padding-bottom: 3vh;
+  color: var(--dark);
+  font-family: Montserrat;
 }
 .flexbox-for-gif-and-arrow-buttons {
   display: flex;
   height: auto;
 }
 .demo-gif {
-  max-height: 75vh;
+  max-height: 80vh;
   object-fit: contain;
   flex-shrink: 2;
 }

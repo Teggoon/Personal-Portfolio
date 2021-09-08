@@ -16,10 +16,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <img className="logo" src={logo}/>
 
         {currentEndpoint != "/documintdemo" && currentEndpoint != "/sduhelperdemo" && 
+        <span>
+          <img className="logo" src={logo}/>
           <NavBar />
+        </span>
         }
 
         <Switch>
