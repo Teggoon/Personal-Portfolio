@@ -30,14 +30,14 @@ const DocuMintDemoPage = () => {
                 {pageNumber == 1 && <span className="demo-gif-explanation">2. Search for student documents by studentID.</span>}
                 {pageNumber == 2 && <span className="demo-gif-explanation">3. Filter and sort results to find documents easily.</span>}
             <div className="flexbox-for-gif-and-arrow-buttons">
-                <span className="demo-page-button-container" onClick={handleLeftButtonClick} state={leftPageButtonState}>
+                <span className="demo-page-button-container demo-page-button-left-container" onClick={handleLeftButtonClick} state={leftPageButtonState}>
                     <span className="arrow-button arrow-left" state={leftPageButtonState}></span>
                 </span>
                 {pageNumber == 0 && <img className="demo-gif" src={DocuMintLogin}></img>}
                 {pageNumber == 1 && <img className="demo-gif" src={DocuMintSearchAndView}></img>}
                 {pageNumber == 2 && <img className="demo-gif" src={DocuMintFilterAndSort}></img>}
                 
-                <span className="demo-page-button-container" onClick={handleRightButtonClick} state={rightPageButtonState} shine={pageNumber == minPageNUmber ? "true" : "false"}>
+                <span className="demo-page-button-container demo-page-button-right-container" onClick={handleRightButtonClick} state={rightPageButtonState} shine={pageNumber == minPageNUmber ? "true" : "false"}>
                     <span className="arrow-button arrow-right" state={rightPageButtonState}></span>
                 </span>
             </div>

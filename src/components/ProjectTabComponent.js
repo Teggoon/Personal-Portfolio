@@ -31,7 +31,7 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
 
                         {!hasSourceCode && 
                             <span className="unavailable-code-link">
-                                No code available
+                                View code
                             </span>
                         }
                     </div>

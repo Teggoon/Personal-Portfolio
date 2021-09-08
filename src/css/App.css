@@ -332,13 +332,13 @@ body {
   height: 10vh;
 }
 .arrow-right {
-  margin-left: 15%;
+  margin-left: 30%;
   transform: translateY(30vh) rotate(-45deg);
   -webkit-transform: translateY(30vh) rotate(-45deg);
 }
 .arrow-left {
   float: right;
-  margin-right: 15%;
+  margin-right: 30%;
   transform: translateY(30vh) rotate(135deg);
   -webkit-transform: translateY(30vh) rotate(135deg);
 }
@@ -370,6 +370,10 @@ body {
 }
 .single-line-input-container {
   padding-bottom: 2vh;
+}
+.single-line-input {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
 }
 .contact-form-user-input {
   border: 1px solid rgb(190,190,190);
