@@ -1,5 +1,7 @@
 import { useState } from "react";
 import DocuMintLogin from "../gif/DocuMintLogin.gif";
+import DocuMintSearchAndView from "../gif/DocuMintSearchAndView.gif";
+import DocuMintFilterAndSort from "../gif/DocuMintFilterAndSort.gif";
 
 const minPageNUmber = 0;
 const maxPageNumber = 2;
@@ -35,6 +37,8 @@ const DocuMintDemoPage = () => {
             </div>
             <div>
                 {pageNumber == 0 && <img className="demo-gif" src={DocuMintLogin}></img>}
+                {pageNumber == 1 && <img className="demo-gif" src={DocuMintSearchAndView}></img>}
+                {pageNumber == 2 && <img className="demo-gif" src={DocuMintFilterAndSort}></img>}
             </div>
         </div>
     );
