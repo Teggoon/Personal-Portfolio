@@ -286,28 +286,43 @@ body {
 .demo-gif-explanation {
   display: inline-block;
   position: relative;
-  width: 50vw;
+  width: 100vw;
   text-align: center;
+  padding-bottom: 3vh;
 }
-.demo-page-button-left-container {
-  display: inline-block;
-  width: 25vw;
-  box-sizing: content-box;
+.flexbox-for-gif-and-arrow-buttons {
+  display: flex;
+  height: auto;
 }
-.demo-page-button-right-container {
+.demo-gif {
+  max-height: 75vh;
+  object-fit: contain;
+  flex-shrink: 2;
+  background-color: blueviolet;
+}
+.demo-page-button-container {
   display: inline-block;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+.demo-page-button-container:hover {
+  animation: arrowbuttonhover 0.3s ease;
+  background-color: rgba(230,230,230, 0.3);
+  cursor: pointer;
 }
 .demo-explanation-row-container {
   height: 10vh;
 }
 .arrow-right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+  margin-left: 15%;
+  transform: translateY(30vh) rotate(-45deg);
+  -webkit-transform: translateY(30vh) rotate(-45deg);
 }
 .arrow-left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
   float: right;
+  margin-right: 15%;
+  transform: translateY(30vh) rotate(135deg);
+  -webkit-transform: translateY(30vh) rotate(135deg);
 }
 
 .arrow-div {
@@ -317,13 +332,6 @@ body {
   border-top: 139px solid transparent;
   border-bottom: 139px solid transparent;
 }
-.demo-gif {
-  width: 80vw;
-  max-height: 70vh;
-  margin-left: 10vw;
-  object-fit: contain;
-}
-
 
 #arrow-orange {
   border-left: 130px solid var(--light-orange);
@@ -413,6 +421,13 @@ body {
   }
 }
 
+@keyframes arrowbuttonhover {
+  from {
+    background-color: rgba(230,230,230,0.0);
+  } to {
+    background-color: rgba(230,230,230,0.3);
+  }
+}
 
 @media screen and (max-width: 560px) {
   .logo {
