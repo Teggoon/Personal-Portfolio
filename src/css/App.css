@@ -320,9 +320,12 @@ body {
   flex-grow: 1;
   box-sizing: border-box;
 }
+.demo-page-button-container[shine="true"] {
+  animation: arrowbuttonshine 1s infinite;
+}
 .demo-page-button-container[state="active"]:hover {
   animation: arrowbuttonhover 0.3s ease;
-  background-color: rgba(230,230,230, 0.4);
+  background-color: rgba(230,230,230, 0.5);
   cursor: pointer;
 }
 .demo-explanation-row-container {
@@ -440,8 +443,20 @@ body {
   from {
     background-color: rgba(230,230,230,0.0);
   } to {
-    background-color: rgba(230,230,230,0.4);
+    background-color: rgba(230,230,230,0.5);
   }
+}
+
+@keyframes arrowbuttonshine {
+  0% {
+    background-color: rgba(230,230,230,0.6);
+  } 
+  50% {
+    background-color: rgba(230,230,230,0.0);
+  }
+  100% {
+    background-color: rgba(230,230,230,0.6);
+  } 
 }
 
 @media screen and (max-width: 560px) {

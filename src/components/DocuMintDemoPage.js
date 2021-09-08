@@ -37,7 +37,7 @@ const DocuMintDemoPage = () => {
                 {pageNumber == 1 && <img className="demo-gif" src={DocuMintSearchAndView}></img>}
                 {pageNumber == 2 && <img className="demo-gif" src={DocuMintFilterAndSort}></img>}
                 
-                <span className="demo-page-button-container" onClick={handleRightButtonClick} state={rightPageButtonState}>
+                <span className="demo-page-button-container" onClick={handleRightButtonClick} state={rightPageButtonState} shine={pageNumber == minPageNUmber ? "true" : "false"}>
                     <span className="arrow-button arrow-right" state={rightPageButtonState}></span>
                 </span>
             </div>
