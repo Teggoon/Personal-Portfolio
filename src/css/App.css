@@ -369,12 +369,15 @@ body {
 .contact-page h2 {
   padding-left: 3vw;
   font-family: Montserrat;
+  
+  animation: fadeinfromtopsubtle 1s ease;
 }
 .contact-form {
   padding-left: 3vw;
 }
 .single-line-input-container {
   padding-bottom: 2vh;
+  animation: fadeinfromtopsubtle 1s ease;
 }
 .single-line-input {
   padding-top: 0.25em;
@@ -391,6 +394,7 @@ body {
   height: 50vh;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
+  animation: fadeinfromtopsubtle 1s ease; 
 }
 #submit-contact-form-button {
   margin-top: 1vh;
@@ -399,6 +403,7 @@ body {
   color: var(--basically-white);
   font-size: 1.3vw;
   padding: 5px 15px;
+  animation: fadeinfromtopsubtle 1s ease; 
 }
 #submit-contact-form-button:hover {
   background-color: var(--dark-cyan-lil-darker);
@@ -427,6 +432,16 @@ body {
 @keyframes fadeinfromtop {
   from {
     transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes fadeinfromtopsubtle {
+  from {
+    transform: translateY(-0.7vh);
     opacity: 0;
   }
   to {
