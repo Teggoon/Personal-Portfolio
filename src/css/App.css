@@ -108,7 +108,7 @@ body {
   position: absolute;
   border-right: 2px solid var(--light-orange);
   animation-name: vertical-line-flowdown;
-  animation-duration: 500ms;
+  animation-duration: 1200ms;
   animation-timing-function: ease;
   height: 140px;
 }
@@ -198,6 +198,8 @@ body {
 .project-page h2 {
   padding-left: 5vw;
   font-family: Montserrat;
+  
+  animation: fadeinfromleftsubtle 1s ease;
 }
 
 .project-description-container {
@@ -210,6 +212,8 @@ body {
   font-family: Montserrat;
   color: var(--dark);
   box-shadow: 5px 5px 5px 0px #DDD;
+  
+  animation: fadeinfromleftsubtle 1s ease;
 }
 .project-title-description-container {
   /* background-color: red; */
@@ -411,11 +415,11 @@ body {
 }
 
 @keyframes fadeinfrombottom {
-  from {
+  0% {
     transform: translateY(15px);
     opacity: 0;
   }
-  to {
+  100% {
     transform: translateY(0px);
     opacity: 1;
   }
@@ -440,7 +444,17 @@ body {
     transform: translateX(0px);
     opacity: 1;
   }
+}
 
+@keyframes fadeinfromleftsubtle {
+  0% {
+    transform: translateX(-2vw);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes buttonhover {
