@@ -196,7 +196,7 @@ body {
 }
 
 .project-page h2 {
-  padding-left: 3vw;
+  padding-left: 5vw;
   font-family: Montserrat;
 }
 
@@ -205,6 +205,7 @@ body {
   box-sizing: border-box;
   width: 80vw;
   margin-bottom: 3vh;
+  margin-left: 2vw;
   background-color: var(--basically-white);
   font-family: Montserrat;
   color: var(--dark);
@@ -383,7 +384,21 @@ body {
 
 #contact-form-content-input {
   width: 70vw;
-  height: 60vh;
+  height: 50vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+#submit-contact-form-button {
+  margin-top: 1vh;
+  border: 1px solid #eee;
+  background-color: var(--dark-cyan);
+  color: var(--basically-white);
+  font-size: 1.3vw;
+  padding: 5px 15px;
+}
+#submit-contact-form-button:hover {
+  background-color: var(--dark-cyan-lil-darker);
+  cursor: pointer;
 }
 
 @keyframes vertical-line-flowdown {

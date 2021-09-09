@@ -2,7 +2,7 @@ const ContactPage = () => {
     return ( 
     <div className="contact-page">
         <h2>Contact Page</h2>
-        <form className="contact-form" action="" method="POST">
+        <form className="contact-form" action="/sendmessage" method="POST">
             <div className="single-line-input-container">
             <label htmlFor="contact-form-name-input">Name: </label>
             <input id="contact-form-name-input" className="contact-form-user-input single-line-input" type="text"></input>
@@ -16,7 +16,8 @@ const ContactPage = () => {
 
             <label htmlFor="contact-form-content-input"></label>
             <textarea id="contact-form-content-input" className="contact-form-user-input" rows="4"></textarea>
-            
+            <br/>
+            <button id="submit-contact-form-button">Submit</button>
         </form>
     </div>
     );
