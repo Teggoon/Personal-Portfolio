@@ -12,7 +12,6 @@ const ProjectsPage = () => {
                 ["Frontend: React, CSS", 
                 "Backend: Node & Express, SQL", 
                 "Automated testing: Jest, Enzyme",
-                "Security: LDAP authentication"
                 ]}
             hasSourceCode={false}
             hasProjectDemo={true}
