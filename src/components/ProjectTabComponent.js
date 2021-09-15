@@ -16,7 +16,7 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
                         }
                         
                         {hasProjectDemo && demoLinkType == "externalLink" &&
-                            <a className="view-project-demo-link project-related-link" href={projectDemoLink}>
+                            <a className="view-project-demo-link project-related-link" href={projectDemoLink} target="_blank">
                                 View Demo
                                 <img className="external-link-image" src={external_link_image}></img>
                             </a>

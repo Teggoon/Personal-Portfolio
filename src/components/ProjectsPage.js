@@ -41,7 +41,9 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/Shockwaveio-Online-Multiplayer-Game"}
-            hasProjectDemo={false}
+            hasProjectDemo={true}
+            projectDemoLink={"http://localhost:5000"}
+            demoLinkType={"externalLink"}
             />
             
             <h2>Software</h2>

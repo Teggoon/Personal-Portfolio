@@ -83,13 +83,17 @@ body {
   overflow-x: hidden;
 }
 
+.homepage-container h2 {
+  font-family: MontserratThin; 
+}
+
 .homepage-section-1 {
   box-sizing: border-box;
   padding-top: 10vh;
   height: 90vh;
   position: relative;
   width: 100%;
-  
+
 }
 
 .homepage-main-intro-container {
