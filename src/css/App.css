@@ -213,8 +213,8 @@ body {
 .project-description-container {
   display: block;
   box-sizing: border-box;
-  width: 80vw;
-  margin-bottom: 3vh;
+  width: 90vw;
+  margin-bottom: 5vh;
   margin-left: 2vw;
   background-color: var(--basically-white);
   font-family: Montserrat;
@@ -230,7 +230,7 @@ body {
   position: relative;
   display: inline-block;
   padding-left: 3vw;
-  min-height: 30vh;
+  min-height: 40vh;
   width: 55vw;
 }
 .project-title-description-container h3 {
@@ -256,8 +256,25 @@ body {
   font-size: 0.9rem;
   color: var(--gentler-dark-gray);
 }
-
+.project-thumbnail-container {
+  /* background-color:aquamarine; */
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1.5vh;
+  width: 35vw;
+  min-height: 40vh;
+}
+.project-thumbnail {
+  max-width:100%;
+  height: auto;
+}
 .project-related-link {
+  position: absolute;
+  bottom: 20%;
   font-size: 0.9rem;
   color: rgb(43, 99, 184);
 }
@@ -266,16 +283,15 @@ body {
 }
 
 .view-project-demo-link {
-  position: absolute;
-  margin-left: 50%;
+  margin-left: 0px;
 }
 .view-project-code-link {
-  position: absolute;
-  margin-left: 70%;
+  margin-left: 25%;
 }
 .unavailable-code-link {
   position: absolute;
-  margin-left: 70%;
+  bottom: 20%;
+  margin-left: 25%;
   color: #aaa;
 }
 .external-link-image {

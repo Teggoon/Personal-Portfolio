@@ -1,6 +1,6 @@
 import external_link_image from "../image/external_link_image.png"
 import { Link } from "react-router-dom";
-const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink, demoLinkType}) => {
+const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink, demoLinkType, thumbnail}) => {
     return ( 
         <div className="project-description-container">
                 <div className="columns-side-by-side">
@@ -35,14 +35,17 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
                             </span>
                         }
                     </div>
-                    <div className="technologies-used-container">
+                    <div className="project-thumbnail-container">
+                        <img src={thumbnail} className="project-thumbnail"></img>
+                    </div>
+                    {/*<div className="technologies-used-container">
                         <h5>Technologies used: </h5>
                         <ul>
                             {technologies.map((technology, index) => {
                                 return <li key={index}>{technology}</li>
                             })}
                         </ul>
-                    </div>
+                    </div>*/}
                 </div>
         </div>
     );

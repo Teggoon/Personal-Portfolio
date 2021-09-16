@@ -1,4 +1,9 @@
 import ProjectTabComponent from "./ProjectTabComponent";
+import documint_thumbnail from "../image/documint_thumbnail.png"
+import agora_thumbnail from "../image/agora_thumbnail.png"
+import shockwaveio_thumbnail from "../image/shockwaveio_thumbnail.png"
+import sduhelper_thumbnail from "../image/sduhelper_thumbnail.png"
+
 const ProjectsPage = () => {
     return ( 
         <div className="project-page">
@@ -17,6 +22,7 @@ const ProjectsPage = () => {
             hasProjectDemo={true}
             projectDemoLink={"/documintdemo"}
             demoLinkType={"localLink"}
+            thumbnail={documint_thumbnail}
             />
             
             <ProjectTabComponent 
@@ -31,6 +37,7 @@ const ProjectsPage = () => {
             hasProjectDemo={true}
             projectDemoLink={"https://agora.bid"}
             demoLinkType={"externalLink"}
+            thumbnail={agora_thumbnail}
             />
 
             <ProjectTabComponent 
@@ -46,6 +53,7 @@ const ProjectsPage = () => {
             hasProjectDemo={true}
             projectDemoLink={"http://localhost:5000"}
             demoLinkType={"externalLink"}
+            thumbnail={shockwaveio_thumbnail}
             />
             
             <h2>Software</h2>
@@ -61,6 +69,7 @@ const ProjectsPage = () => {
             hasProjectDemo={true}
             projectDemoLink={"/sduhelperdemo"}
             demoLinkType={"localLink"}
+            thumbnail={sduhelper_thumbnail}
             />
         </div>
     );
