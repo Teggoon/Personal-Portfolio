@@ -28,7 +28,9 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={true}
             sourceCodeLink={"https://github.com/Teggoon/AgoraDatabaseCode"}
-            hasProjectDemo={false}
+            hasProjectDemo={true}
+            projectDemoLink={"https://agora.bid"}
+            demoLinkType={"externalLink"}
             />
 
             <ProjectTabComponent 

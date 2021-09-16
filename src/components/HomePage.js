@@ -47,7 +47,7 @@ const HomePage = () => {
                     <span className="vertical-line-animation" id="vertical-line-1"></span>
                     <span className="vertical-line-animation" id="vertical-line-2"></span>
                     <h2 className="homepage-name">Haocheng Li</h2>
-                    <h3 className="homepage-title">Front-end & web developer</h3>
+                    <h3 className="homepage-title">Junior developer</h3>
                     <h4 className="homepage-question">Have a business need I can meet?</h4>
                 </div>
                 {/* <div className="scroll-down-suggestion">Scroll to see my experiences</div> */}
