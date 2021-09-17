@@ -5,7 +5,6 @@ import HomePage from './HomePage';
 import GamesPage from './GamesPage';
 import MusicPage from './MusicPage';
 import ProjectsPage from './ProjectsPage';
-import logo from "../image/logo.png"
 import ContactPage from './ContactPage';
 import DocuMintDemoPage from './DocuMintDemoPage';
 import SDUHelperDemoPage from './SDUHelperDemoPage';
@@ -19,7 +18,7 @@ function App() {
 
         {currentEndpoint != "/documintdemo" && currentEndpoint != "/sduhelperdemo" && 
         <span>
-          <img className="logo" src={logo}/>
+          
           <NavBar />
         </span>
         }
