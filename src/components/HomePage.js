@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import AnimatedBackground from './AnimatedBackground';
 const experienceSectionHeight = 260;
 
 const HomePage = () => {
@@ -42,6 +42,7 @@ const HomePage = () => {
 
     return ( 
         <div onScroll={handleScroll} className="homepage-container">
+            <AnimatedBackground />
             <div className="homepage-section-1">
                 <div className="homepage-main-intro-container">
                     <span className="vertical-line-animation" id="vertical-line-1"></span>

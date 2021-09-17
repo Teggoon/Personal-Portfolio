@@ -11,7 +11,7 @@ const ProjectsPage = () => {
 
             <ProjectTabComponent 
             title="Full-Stack Development of DocuMint"
-            description="DocuMint was a web application enabling University of Phoenix
+            description="A web application enabling University of Phoenix
             employees to view pdf documents stored in their AWS S3 database."
             technologies={
                 ["Frontend: React, CSS", 
@@ -27,8 +27,8 @@ const ProjectsPage = () => {
             
             <ProjectTabComponent 
             title="Backend database management of Agora, a cryptocurrency-browsing website"
-            description="Co-wrote script to fetch cryptocurrency market data from the public APIs of 19
-            popular cryptocurrency exchanges, and populate them into our Firebase database."
+            description="Node.js script that populates our Firebase database with cryptocurrency market data from 19
+            cryptocurrency exchanges."
             technologies={
                 ["Node.js"
                 ]}
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
 
             <ProjectTabComponent 
             title="Shockwave.io online multiplayer game"
-            description="Created a multiplayer game where players jump around and kill each other with shockwaves
+            description="A multiplayer game where players jump around and kill each other with shockwaves
             on the ground."
             technologies={
                 ["Frontend: vanilla Javascript & HTML",
@@ -60,8 +60,8 @@ const ProjectsPage = () => {
 
             <ProjectTabComponent 
             title="SDU Helper, a Windows Desktop application for University of Phoenix"
-            description="This is an application written in C#. As a support tool for IT employees, it generates
-            XML files based on the results of SQL queries to their financial-aid document database."
+            description="An application that generates
+            XMLs based on the results of SQL queries to a financial-aid document database."
             technologies={
                 ["C#, SQL",
                 ]}

@@ -2,7 +2,7 @@ import external_link_image from "../image/external_link_image.png"
 import { Link } from "react-router-dom";
 const ProjectTabComponent = ({title, description, technologies, hasSourceCode, sourceCodeLink, hasProjectDemo, projectDemoLink, demoLinkType, thumbnail}) => {
     return ( 
-        <div className="project-description-container">
+        <div className="project-component-container">
                 <div className="columns-side-by-side">
 
                     <div className="project-component-left-side-container">
