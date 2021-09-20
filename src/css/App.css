@@ -322,10 +322,10 @@ body {
   position: relative;
   bottom: 20%;
   font-size: 0.9rem;
-  color: rgb(43, 99, 184);
+  color: var(--blue);
 }
 .project-related-link:visited {
-  color: rgb(43, 99, 184);
+  color: var(--blue);
 }
 
 .view-project-demo-link {
