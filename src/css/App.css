@@ -1,5 +1,5 @@
 :root {
-  --basically-white: rgb(250,250,250);
+  --basically-white: rgb(248,248,248);
   --light-gray: rgb(230,230,230);
   --light-orange: rgb(242, 179, 65);
   --light-orange-lil-darker: rgb(204, 150, 51);
@@ -28,7 +28,7 @@ body {
   /* background: url("../image/scattered-forcefields.svg"); */
   /* background: url("../image/generated.svg"); */
   /* background-image: url('../image/homepage_background_static2.png'); */
-  background-image: url('../image/coding_background.jpg');
+  /* background-image: url('../image/coding_background.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -107,7 +107,7 @@ body {
   padding-bottom: 2vh;
 }
 .nav-link:hover {
-  box-shadow: 0px 5px 5px -1px #000;
+  /* box-shadow: 0px 5px 5px -1px #000; */
   background-color: rgb(82, 82, 82);
   /* color: var(--dark-hover); */
   animation: buttonhover 0.3s ease;
@@ -145,7 +145,7 @@ body {
   height: 55vh;
   margin-bottom: 20vh;
   box-sizing: border-box;
-  /* animation: fadeinfrombottom 1s ease; */
+  animation: fadeinsubtle 1s ease;
   box-shadow: 10px 10px 10px -2px rgba(0,0,0,0.1);
 }
 
@@ -278,8 +278,8 @@ body {
   width: 50vw;
 }
 .project-component-left-side-container h3 {
-  /* color: var(--gentler-dark-gray); */
-  color:var(--blue);
+  color: var(--gentler-dark-gray);
+  /* color:var(--blue); */
   font-family: Montserrat;
 }
 .project-component-left-side-container p {
@@ -586,7 +586,7 @@ body {
     opacity: 1;
   }
   to {
-    box-shadow: 0px 5px 5px -1px #000;
+    /* box-shadow: 0px 5px 5px -1px #000; */
     /* color: var(--dark-hover); */
   background-color: rgb(82, 82, 82);
     transform: translateY(-1px);
@@ -648,6 +648,13 @@ body {
   
 }
 
+#coding-background-image{
+  position: fixed;
+  left: 60vw;
+  top: 20vh;
+  height: 66vh;
+  animation: fadeinsubtle 2s linear;
+}
 .animated-sprite {
   z-index: -1;
 }
@@ -655,52 +662,52 @@ body {
   position: absolute;
   left: 43vw;
   top: 15vh;
-  animation: floatupdiagonal 7.7s linear;
-  width: 38px;
-  height: 40px;
+  animation: floatupdiagonal 7.7s linear, fadeinsubtle 2s linear;
+  width: 18px;
+  height: 20px;
 }
 #sprite2 {
   position: absolute;
   left: 4vw;
   top: 24vh;
-  animation: floatdown 7.7s linear;
-  width: 28px;
-  height: 28px;
+  animation: floatdown 7.7s linear, fadeinsubtle 2s linear;
+  width: 18px;
+  height: 18px;
 }
 
 #sprite3 {
   position: absolute;
   left: 2vw;
   top: 58vh;
-  animation: floatdownslanted 7.7s linear;
-  width: 28px;
-  height: 28px;
+  animation: floatdownslanted 7.7s linear, fadeinsubtle 2s linear;
+  width: 18px;
+  height: 18px;
 }
 
 #sprite4 {
   position: absolute;
-  left: 29vw;
+  left: 19vw;
   top: 9vh;
-  animation: floatdowndiagonal 7.7s linear;
-  width: 28px;
-  height: 28px;
+  animation: floatdowndiagonal 7.7s linear, fadeinsubtle 2s linear;
+  width: 18px;
+  height: 18px;
 }
 #sprite5 {
   position: absolute;
   left: 23vw;
   top: 84vh;
-  animation: floatupdiagonal 7.7s linear;
-  width: 28px;
-  height: 28px;
+  animation: floatupdiagonal 7.7s linear, fadeinsubtle 2s linear;
+  width: 18px;
+  height: 18px;
 }
 
 #sprite6 {
   position: absolute;
   left: 40vw;
   top: 83vh;
-  animation: floatrightup 7.7s linear;
-  width: 25px;
-  height: 25px;
+  animation: floatrightup 7.7s linear, fadeinsubtle 2s linear;
+  width: 15px;
+  height: 15px;
 }
 
 @keyframes floatupslanted {
