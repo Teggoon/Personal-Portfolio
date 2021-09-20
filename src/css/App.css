@@ -12,6 +12,7 @@
   --dark-cyan-lil-darker: rgb(43, 89, 92);
   --gentler-dark-gray: rgb(70,70,92);
   --blue: rgb(25,88,194);
+  --blue-lil-darker: rgb(20, 75, 172);
   --red-pink: rgb(255,101,77);
 }
 @font-face {
@@ -460,6 +461,12 @@ body {
   
   animation: fadeinfromtopsubtle 1s ease;
 }
+#post-send-message-note {
+  padding-left: 3vw;
+  font-family: Montserrat;
+  
+  animation: fadeinfromtopsubtle 1s ease;
+}
 .contact-form {
   padding-left: 3vw;
 }
@@ -496,14 +503,14 @@ body {
 #submit-contact-form-button {
   margin-top: 1vh;
   border: 1px solid #eee;
-  background-color: var(--dark-cyan);
+  background-color: var(--blue);
   color: var(--basically-white);
   font-size: 1.3vw;
   padding: 5px 15px;
   animation: fadeinfromtopsubtle 1s ease; 
 }
 #submit-contact-form-button:hover {
-  background-color: var(--dark-cyan-lil-darker);
+  background-color: var(--blue-lil-darker);
   cursor: pointer;
 }
 

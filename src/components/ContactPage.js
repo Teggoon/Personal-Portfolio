@@ -1,12 +1,18 @@
+import { useState } from "react";
+
 const ContactPage = () => {
 
+    const [userSentMessage, setUserSentMessage] = useState(false);
     const sendMessage = (event) => {
+        event.preventDefault();
         
+        setUserSentMessage(true);
     }
 
     return ( 
     <div className="contact-page">
         <h2>Contact Page</h2>
+        {!userSentMessage && 
         <form className="contact-form">
             <div className="single-line-input-container">
             <label htmlFor="contact-form-name-input">Name: </label>
@@ -24,6 +30,8 @@ const ContactPage = () => {
             <br/>
             <button id="submit-contact-form-button" onClick={sendMessage}>Send message</button>
         </form>
+        }
+        {userSentMessage && <span id="post-send-message-note">Thank you for sending the message!</span>}
     </div>
     );
 }
