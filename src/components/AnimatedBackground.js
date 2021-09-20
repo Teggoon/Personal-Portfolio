@@ -11,9 +11,9 @@ const AnimatedBackground = () => {
     <div className="animated-background">
     <img src={sprite1} id="sprite1" className="animated-sprite"/>
     <img src={sprite2} id="sprite2" className="animated-sprite"/>
-    <img src={sprite1} id="sprite3" className="animated-sprite"/>
+    <img src={sprite4} id="sprite3" className="animated-sprite"/>
     <img src={sprite4} id="sprite4" className="animated-sprite"/>
-    <img src={sprite1} id="sprite5" className="animated-sprite"/>
+    <img src={sprite5} id="sprite5" className="animated-sprite"/>
     <img src={sprite6} id="sprite6" className="animated-sprite"/>
     <img src={codingBackground} id="coding-background-image"/>
     
