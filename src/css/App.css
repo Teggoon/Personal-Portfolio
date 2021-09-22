@@ -142,7 +142,7 @@ body {
   margin-left: 7vw;
   width: calc(50vw + 10rem);
   max-width: 500px;
-  min-height: 55vh;
+  min-height: 50vh;
   margin-bottom: 20vh;
   box-sizing: border-box;
   animation: fadeinsubtle 1s ease;
