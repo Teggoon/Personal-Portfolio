@@ -87,9 +87,8 @@ body {
 .navbar-flex-container {
   background-color: rgb(70, 70, 70);
   position: relative;
-  margin-left: calc(70vw - 16rem);
+  margin-left: 50vw;
   width: 50vw;
-  min-width: 400px;
   box-sizing: border-box;
   display: flex;
   animation: fadeinfromtop 1s ease;
