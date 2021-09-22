@@ -624,7 +624,7 @@ body {
   .logo {
     display: none;
   }
-  .navbar-container {
+  .navbar-flex-container {
     margin-left: 0px;
     width: 100vw;
     flex-direction: column;
@@ -670,6 +670,7 @@ body {
   top: 20vh;
   height: 66vh;
   animation: fadeinsubtle 2s linear;
+  z-index: -1;
 }
 .animated-sprite {
   z-index: -1;
