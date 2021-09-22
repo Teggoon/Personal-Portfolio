@@ -142,7 +142,7 @@ body {
   margin-left: 7vw;
   width: calc(50vw + 10rem);
   max-width: 500px;
-  height: 55vh;
+  min-height: 55vh;
   margin-bottom: 20vh;
   box-sizing: border-box;
   animation: fadeinsubtle 1s ease;
@@ -171,7 +171,7 @@ body {
 .homepage-name {
   color: var(--dark);
   font-weight: 100;
-  font-size: calc(2vw + 1.5em);
+  font-size: calc(3.5vmin + 1.5em);
   font-family: MontserratThin;
   margin-bottom: 0px;
   margin-left: 50px;
@@ -180,7 +180,7 @@ body {
 .homepage-title {
   color: var(--dark);
   font-family: Montserrat;
-  font-size: calc(0.5vw + 0.8em);
+  font-size: calc(3.5vmin+ 0.8em);
   font-weight: 800;
   margin-top: 29px;
   margin-left: 55px;
@@ -190,7 +190,7 @@ body {
   color: var(--light-orange);
   font-family: Montserrat;
   font-weight: bolder;
-  font-size: calc(0.3vw + 1em);
+  font-size: calc(3.5vmin+ 0.8em);
   margin-left: 55px;
 
 } 
