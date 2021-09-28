@@ -80,12 +80,11 @@ body {
   animation: fadeinfromtop 1s ease;
 }
 .navbar-container {
-  background-color: rgb(70, 70, 70);
-  padding-bottom: 0.5vh;
+  background-color: rgb(59, 59, 59);
   z-index: 1;
 }
 .navbar-flex-container {
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(59, 59, 59);
   position: relative;
   margin-left: 50vw;
   width: 50vw;
@@ -103,7 +102,7 @@ body {
   padding-top: 1.5vh;
   padding-bottom: 2vh;
   text-decoration: none;
-  border-left: 1px solid black;
+  border-left: 1px solid rgb(53, 53, 53);
   text-align: center;
 }
 .nav-link:hover {
