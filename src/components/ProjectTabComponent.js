@@ -42,7 +42,17 @@ const ProjectTabComponent = ({title, description, technologies, hasSourceCode, s
                         </div>
                     </div>
                     <div className="project-thumbnail-container">
-                        <img src={thumbnail} className="project-thumbnail"></img>
+                        {demoLinkType == "localLink" &&
+                        <Link to={projectDemoLink} target="_blank">
+                            <img src={thumbnail} className="project-thumbnail"></img>
+                        </Link>
+                        }
+                        {hasProjectDemo && demoLinkType == "externalLink" && 
+                        <a href={projectDemoLink} target="_blank">
+                            <img src={thumbnail} className="project-thumbnail"></img>
+                        </a>
+                        
+                        }
                     </div>
                     {/*<div className="technologies-used-container">
                         <h5>Technologies used: </h5>
