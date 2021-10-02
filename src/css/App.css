@@ -673,7 +673,7 @@ body {
   left: 60vw;
   top: 20vh;
   height: 66vh;
-  animation: fadeinsubtle 2s linear;
+  animation: fadeinsubtle 1.5s linear;
   z-index: -1;
 }
 .animated-sprite {
