@@ -6,6 +6,10 @@ const ContactPage = () => {
     const sendMessage = (event) => {
         event.preventDefault();
         
+        fetch("/sendMessage", {
+            method: "post"
+        })
+
         setUserSentMessage(true);
     }
 

@@ -10,8 +10,10 @@ const LinkWrapper = ({path, name}) => {
 const NavBar = () => {
     return ( 
         <div className="navbar-container ">
-            <span className="website-top-left-title">Portfolio</span>
-            <img className="logo" src={logo} onClick={() => {window.location.href = "/"}}/>
+            <span className="website-top-left-title" onClick={() => {window.location.href = "/"}}>
+                <img className="logo" src={logo} />
+                Portfolio
+            </span>
             <div className="navbar-flex-container">
                 <LinkWrapper path="/" name="Home" />
                 <LinkWrapper path="/projects" name="Projects" />

@@ -25,7 +25,7 @@ const ProjectsPage = () => {
             thumbnail={documint_thumbnail}
             />
 
-            
+{/*             
             <ProjectTabComponent 
             title="Full-Stack Development of Template Crunch"
             description="A website where University of Phoenix enrollment 
@@ -39,7 +39,7 @@ const ProjectsPage = () => {
             projectDemoLink={"/documintdemo"}
             demoLinkType={"localLink"}
             thumbnail={documint_thumbnail}
-            />
+            /> */}
             
             <ProjectTabComponent 
             title="Shockwave.io online multiplayer game"
