@@ -11,8 +11,8 @@ const ProjectsPage = () => {
 
             <ProjectTabComponent 
             title="Full-Stack Development of DocuMint"
-            description="A web application enabling University of Phoenix
-            employees to view pdf documents stored in their AWS S3 database."
+            description="A website enabling University of Phoenix
+            IT employees to view pdf documents stored in their AWS S3 database."
             technologies={
                 ["Frontend: React, CSS", 
                 "Backend: Node & Express, SQL", 
@@ -23,6 +23,38 @@ const ProjectsPage = () => {
             projectDemoLink={"/documintdemo"}
             demoLinkType={"localLink"}
             thumbnail={documint_thumbnail}
+            />
+
+            
+            <ProjectTabComponent 
+            title="Full-Stack Development of Template Crunch"
+            description="A website where University of Phoenix enrollment 
+            employees can create hundreds of E-sign templates at the touch of a few buttons."
+            technologies={
+                ["Frontend: React, CSS", 
+                "Backend: Node & Express, Python",
+                ]}
+            hasSourceCode={false}
+            hasProjectDemo={true}
+            projectDemoLink={"/documintdemo"}
+            demoLinkType={"localLink"}
+            thumbnail={documint_thumbnail}
+            />
+            
+            <ProjectTabComponent 
+            title="Shockwave.io online multiplayer game"
+            description="A multiplayer game where players jump around and kill each other with shockwaves
+            on the ground."
+            technologies={
+                ["Frontend: vanilla Javascript & HTML",
+                "Backend: Node.js, web sockets"
+                ]}
+            hasSourceCode={true}
+            sourceCodeLink={"https://github.com/Teggoon/Shockwaveio-Online-Multiplayer-Game"}
+            hasProjectDemo={true}
+            projectDemoLink={"http://localhost:5000"}
+            demoLinkType={"externalLink"}
+            thumbnail={shockwaveio_thumbnail}
             />
             
             <ProjectTabComponent 
@@ -40,22 +72,6 @@ const ProjectsPage = () => {
             thumbnail={agora_thumbnail}
             />
 
-            <ProjectTabComponent 
-            title="Shockwave.io online multiplayer game"
-            description="A multiplayer game where players jump around and kill each other with shockwaves
-            on the ground."
-            technologies={
-                ["Frontend: vanilla Javascript & HTML",
-                "Backend: Node.js, web sockets"
-                ]}
-            hasSourceCode={true}
-            sourceCodeLink={"https://github.com/Teggoon/Shockwaveio-Online-Multiplayer-Game"}
-            hasProjectDemo={true}
-            projectDemoLink={"http://localhost:5000"}
-            demoLinkType={"externalLink"}
-            thumbnail={shockwaveio_thumbnail}
-            />
-            
             <h2>Software</h2>
 
             <ProjectTabComponent 
