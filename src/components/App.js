@@ -8,6 +8,7 @@ import ProjectsPage from './ProjectsPage';
 import ContactPage from './ContactPage';
 import DocuMintDemoPage from './DocuMintDemoPage';
 import SDUHelperDemoPage from './SDUHelperDemoPage';
+import TemplateCrunchDemoPage from './TemplateCrunchDemoPage';
 
 function App() {
   const currentURL = (window.location.href + "");
@@ -16,7 +17,9 @@ function App() {
     <Router>
       <div className="App">
 
-        {currentEndpoint != "/documintdemo" && currentEndpoint != "/sduhelperdemo" && 
+        {currentEndpoint != "/documintdemo" && 
+        currentEndpoint != "/sduhelperdemo" && 
+        currentEndpoint != "/templatecrunchdemo" &&
         <span>
           
           <NavBar />
@@ -43,6 +46,10 @@ function App() {
 
           <Route exact path="/sduhelperdemo">
             <SDUHelperDemoPage />
+          </Route>
+
+          <Route exact path="/templatecrunchdemo">
+            <TemplateCrunchDemoPage />
           </Route>
 
         </Switch>

@@ -27,7 +27,7 @@ const ProjectsPage = () => {
             />
 
             
-            {/* <ProjectTabComponent 
+            <ProjectTabComponent 
             title="Full-Stack Development of Template Crunch"
             description="A website where University of Phoenix registrar 
             employees can create hundreds of E-sign templates at the touch of a few buttons."
@@ -37,10 +37,10 @@ const ProjectsPage = () => {
                 ]}
             hasSourceCode={false}
             hasProjectDemo={true}
-            projectDemoLink={"/documintdemo"}
+            projectDemoLink={"/templatecrunchdemo"}
             demoLinkType={"localLink"}
             thumbnail={templatecrunch_thumbnail}
-            /> */}
+            />
             
             <ProjectTabComponent 
             title="Shockwave.io online multiplayer game"
