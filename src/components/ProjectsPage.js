@@ -3,6 +3,7 @@ import documint_thumbnail from "../image/documint_thumbnail.png"
 import agora_thumbnail from "../image/agora_thumbnail.png"
 import shockwaveio_thumbnail from "../image/shockwaveio_thumbnail.png"
 import sduhelper_thumbnail from "../image/sduhelper_thumbnail.png"
+import templatecrunch_thumbnail from "../image/templatecrunch_thumbnail.png"
 
 const ProjectsPage = () => {
     return ( 
@@ -25,10 +26,10 @@ const ProjectsPage = () => {
             thumbnail={documint_thumbnail}
             />
 
-{/*             
-            <ProjectTabComponent 
+            
+            {/* <ProjectTabComponent 
             title="Full-Stack Development of Template Crunch"
-            description="A website where University of Phoenix enrollment 
+            description="A website where University of Phoenix registrar 
             employees can create hundreds of E-sign templates at the touch of a few buttons."
             technologies={
                 ["Frontend: React, CSS", 
@@ -38,7 +39,7 @@ const ProjectsPage = () => {
             hasProjectDemo={true}
             projectDemoLink={"/documintdemo"}
             demoLinkType={"localLink"}
-            thumbnail={documint_thumbnail}
+            thumbnail={templatecrunch_thumbnail}
             /> */}
             
             <ProjectTabComponent 
